@@ -749,7 +749,7 @@ class WindowSelector(object):
         """
         Minimum acceptable window length.
         """
-        return self.config.c_1 * self.config.min_period * 3 / \
+        return self.config.c_1 * self.config.min_period * 7 / \
             self.observed.stats.delta
 
     def reject_windows_based_on_minimum_length(self):

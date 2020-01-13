@@ -27,9 +27,9 @@ def sta_lta(data, dt, min_period):
     """
     Cs = 10 ** (-dt / min_period)
     Cl = 10 ** (-dt / (43 * min_period))
-    TOL = 1e-3
+    TOL = 1e-2
 
-    noise = data.max() / 20
+    noise = data.max() / 25
 
     # 1000 samples should be more then enough to "warm up" the STA/LTA.
     extended_syn = np.zeros(len(data) + 1000, dtype=np.float64)

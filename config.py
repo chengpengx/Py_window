@@ -20,14 +20,14 @@ from . import PyflexError
 
 
 class Config(object):
-    def __init__(self, min_period, max_period, stalta_waterlevel=0.07,
+    def __init__(self, min_period, max_period, stalta_waterlevel=0.03,
                  tshift_acceptance_level=15.0, tshift_reference=0.1,
-                 dlna_acceptance_level=1.3, dlna_reference=0.1,
+                 dlna_acceptance_level=1.3, dlna_reference=1.0,
                  cc_acceptance_level=0.7, s2n_limit=1.5, earth_model="ak135",
-                 min_surface_wave_velocity=0.03,
-                 max_time_before_first_arrival=0.1,
-                 c_0=1.0, c_1=1.5, c_2=0.0,
-                 c_3a=4.0, c_3b=2.5, c_4a=2.0, c_4b=6.0,
+                 min_surface_wave_velocity=0.001,
+                 max_time_before_first_arrival=0.01,
+                 c_0=0.7, c_1=0.5, c_2=0.0,
+                 c_3a=4.0, c_3b=2.5, c_4a=2.0, c_4b=10.0,
                  check_global_data_quality=False, snr_integrate_base=3.5,
                  snr_max_base=3.0, noise_start_index=None, noise_end_index=None,
                  signal_start_index=None, signal_end_index=-1,
